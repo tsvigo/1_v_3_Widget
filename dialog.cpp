@@ -94,7 +94,7 @@ mpz_class activationFunction( // long long list_of_neurons.at(var)
     // exponent = list_of_neurons.at(var); // степень
     // result = pow(base, exponent);
     // Инициализация больших целых чисел
-    mpz_class base("3");
+    mpz_class base("3"); // 2,7 натуральный логарифм
     mpz_class exp(list_of_neurons.at(var));
     mpz_class mod("4611686018000000000");
     mpz_class result;
@@ -232,7 +232,7 @@ Dialog::Dialog(QWidget *parent)
         qDebug() << "Файл не был выбран.";
     }
     // Преобразование QString в std::string
-    std::string stdFileName_neyroni = fileName_neyroni.toStdString();
+   // std::string stdFileName_neyroni = fileName_neyroni.toStdString();
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
